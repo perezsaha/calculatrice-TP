@@ -1,0 +1,91 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(130, 131, 133);
+    display: grid;
+    place-items: center;    
+}
+
+.calculatrice {
+    width: 330px;
+    background: rgb(44, 44, 44);
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #221d3b, 3px 3px 5px #00000070;
+}
+
+.resultat {
+    height: 60px;
+    width: 100%;
+    background: rgb(2, 126, 74);
+    box-shadow: inset -3px -3px 7px #221d3b, inset 3px 3px 5px #00000070;
+}
+
+.resultat input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 1rem;
+    color: bisque;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    box-shadow: inset -1px -1px 7px #221d3b, inset 1px 1px 5px #00000070;
+}
+
+.buttons {
+    padding: 30px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="button"] {
+    width : 56px;
+    height: 56px;
+    margin: 4px;
+    font-size: 23px;
+    background: rgb(44, 44, 44);
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -1px -1px 7px #221d3b, 1px 1px 5px #00000070;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+
+    box-shadow: inset -1px -1px 7px #f9f9fa, inset 1px 1px 5px #ffffff70;
+    
+}
+
+#egal {
+    height: 120px;
+    font-size: 18px;
+}
+
+.info {
+    color: chartreuse;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 9px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
