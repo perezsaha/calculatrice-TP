@@ -24,10 +24,17 @@ body{
 }
 
 .resultat {
-    height: 60px;
     width: 100%;
-    background: rgb(2, 126, 74);
+    display: flex;
+    flex-direction: column;
+    background: rgb(236, 247, 242);
     box-shadow: inset -3px -3px 7px #221d3b, inset 3px 3px 5px #00000070;
+}
+
+.resultat input{
+    min-height: 35px;
+    border: none;
+    user-select: none;
 }
 
 .resultat input {
@@ -35,13 +42,13 @@ body{
     height: 100%;
     background: transparent;
     padding: 1rem;
-    color: bisque;
+    color: rgb(12, 48, 31);
     font-size: 20px;
     text-align: right;
     border: none;
     outline: none;
     font-weight: 500;
-    box-shadow: inset -1px -1px 7px #221d3b, inset 1px 1px 5px #00000070;
+    
 }
 
 .buttons {
@@ -88,4 +95,8 @@ input[type="button"]:active {
     font-size: 9px;
     margin-bottom: 1rem;
     font-weight: 400;
+}
+
+input[type="text"] {
+    user-select: none;
 }

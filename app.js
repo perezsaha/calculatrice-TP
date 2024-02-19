@@ -15,12 +15,13 @@ function calcule(){
             })
         });
     }else {
-        form.fenetre.value = eval(form.fenetre.value)
+        form.fenetres.value = eval(form.fenetre.value)
     }
 }
 
 function suppr(){
     form.fenetre.value = "";
+    form.fenetres.value = "";
 }
 
 function moinsUn() {
@@ -36,7 +37,7 @@ function inverSign() {
         // Convertir la valeur actuelle en nombre
         let nombre = parseFloat(form.fenetre.value);
         // Inverser le signe du nombre
-        form.fenetre.value = -nombre;
+        form.fenetres.value = -nombre;
     }
 }
 
@@ -46,7 +47,7 @@ function rfunc() {
         // Convertir la valeur actuelle en nombre
         let nombre = parseFloat(form.fenetre.value);
         // Calculer la racine carrée du nombre
-        form.fenetre.value = Math.sqrt(nombre);
+        form.fenetres.value = Math.sqrt(nombre);
     }
 }
 
